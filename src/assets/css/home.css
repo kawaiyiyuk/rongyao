@@ -1,0 +1,134 @@
+.slideBox{ position:relative; overflow:hidden; margin:0 auto;  max-width:560px;/* 设置焦点图最大宽度 */ }
+.slideBox .hd{ position:absolute; height:28px; line-height:28px; bottom:0; right:0; z-index:1; }
+.slideBox .hd li{ display:inline-block; width:5px; height:5px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#333; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+.slideBox .hd li.on{ background:#fff;  }
+.slideBox .bd{ position:relative; z-index:0; }
+.slideBox .bd li{ position:relative; text-align:center;  }
+.slideBox .bd li img{ background:url(http://rong-yao.oss-cn-shanghai.aliyuncs.com/loading.gif) center center no-repeat;vertical-align:top; width:100%;/* 图片宽度100%，达到自适应效果 */}
+.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  /* 去掉链接触摸高亮 */
+.slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; color:#fff;  text-align:left;  }
+#home{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#newslist {
+    padding: 0 10px;
+    margin: 20px 0 0 0;
+}
+#newslist .newslistwrap{
+    position: relative;
+}
+#newslist .disline{
+    
+    width: 100%;
+    margin: 0 auto;
+    height: 1px;
+    background: #ccc;
+    align-self:flex-end ;
+}
+#newslist .newslistwrap{
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 10px;
+
+   
+}
+#newslist .newsleft{
+    width: 70%;
+    padding-right: 20px;
+    flex-shrink:0;
+   
+}
+#newslist .newsright{
+    flex-grow:1;
+   
+}
+#newslist .newsleft .newstip{
+    display: inline-block;
+    border: 1px solid #CC6600;
+    margin-right: 6px;
+    padding: 0px 6px;
+    border-radius: 8px;
+}
+#newslist .newsleft .newsbottom{
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+#newslist .newsleft h4{
+    font-size: 14px;
+}
+#newslist .newsleft p{
+    display: inline-block;
+    font-size: 12px;
+    color: #cccccc;
+    display: flex;
+    justify-content:space-between;
+    flex-shrink: 1; /* default 1 */
+}
+#newslist .newsleft .iconfont{
+    margin-right: 4px;
+}
+#newslist .newsleft p.left{
+    float: left;
+    text-align: left;
+}
+#newslist .newsleft p.right{
+    text-align: right;
+    float: right;
+  
+}
+#newslist .newsleft p.right span:nth-child(2),#newslist .newsleft p.left span:nth-child(2){
+   margin-left: 6px;
+}
+
+#newslist .newsright{
+    display: flex;
+    flex-shrink:1;
+    align-items:center;
+
+
+}
+#newslist .newsright img{
+    max-width: 100%;
+    min-height: 70px;
+    align-items:center;
+
+}
+#ry-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    background: #ffffff;
+}
+#ry-footer .footernav{
+    display: flex;
+    -webkit-box-flex: flex;
+    margin: 0;
+    align-items:center;
+    color: #949494
+
+}
+#ry-footer .footernav li.active{
+    color: #FF9900;
+}
+#ry-footer .footernav li{
+    height: 50px;
+    text-align: center;
+    flex-grow:1;
+    -webkit-box-flex-group: 1;
+}
+#ry-footer .footernav li span {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-right: 4px;
+}
+#ry-footer .footernav li h4{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 14px;
+}

@@ -1,0 +1,51 @@
+#ry-header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    display: -webkit-flex; 
+    align-items:center;
+    -webkit-box-align: center;
+    justify-content:space-between;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: #ffffff;
+}
+#ry-header .myself {
+    height: 40px;
+    line-height: 40px;
+    flex-grow:0;
+    width: 40px;
+    text-align:left;
+    text-indent: 5px;
+}
+
+#ry-header .find{
+    height: 40px;
+    line-height: 40px;
+    flex-grow:0;
+    text-align: left;
+    width: 40px;
+    
+}
+#ry-header .myself span, #ry-header .find span{
+
+    font-size: 26px;
+}
+#ry-header .list {
+ 
+    flex-grow:1;
+    display: flex;
+    font-size: 16px;
+    color: #333333;
+    justify-content:space-around;
+
+ 
+}
+#ry-header .list li {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    flex-grow:1;
+}
